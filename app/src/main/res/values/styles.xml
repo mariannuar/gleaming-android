@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorLightPurple</item>
+        <item name="colorControlActivated">@color/colorLightPurple</item>
+        <item name="colorControlHighlight">@color/colorLightPurple</item>
+    </style>
+
+    <style name="PurpleTextInputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorLightPurple</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+    <style name="AppTheme.TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorLightPurple</item>
+        <item name="tabTextAppearance">@style/AppTheme.TabTextApareance</item>
+    </style>
+
+    <style name="AppTheme.SeachLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:icon">
+            @color/colorLightPurple
+        </item>
+    </style>
+
+    <style name="AppTheme.TabTextApareance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

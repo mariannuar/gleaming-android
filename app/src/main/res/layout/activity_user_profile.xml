@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorBlack"
+    tools:context=".UserProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/fondonegro"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:corner_radius="360dp"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite">
+
+
+                <ImageView
+                    android:id="@+id/photo_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/photoprofile"
+                    />
+
+
+            </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+
+            <TextView
+                android:id="@+id/user_name"
+                android:textSize="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:text="Ana Quiros"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/user_email"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:text="ana.q@gmail.com"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_persona" />
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:text="@string/details"
+                android:textColor="@color/colorWhite"
+            />
+
+
+            <TextView
+                android:id="@+id/edit_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:gravity="end"
+                android:text="@string/btn_edit"
+                android:textColor="@color/colorWhite"
+                android:textColorLink="@color/colorLightPurple"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_linearlayout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_logout" />
+
+            <TextView
+                android:id="@+id/logout"
+                android:textSize="20dp"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:text="@string/logout"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
